@@ -1,52 +1,12 @@
 # CSStickyHeaderFlowLayout
 
-## Contributors
+Parallax, Sticky Headers, Growing image heading, done right in one UICollectionViewLayout.
 
-For anyone who'd like to be a contributor to the repository, please read the [Contribution Guideline](https://github.com/CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout/wiki/Contribution-Guidelines)
-
----
-
-<!--![](http://cl.ly/image/1D2i0746180b/1*pev9ZXJAZ2MYoF8-R_nbRA.gif)-->
-
-<img src="http://f.cl.ly/items/05130s2r0X1j1x1N0Q3n/spotify-48-16-half.gif" width="276"/>
-<img src="http://f.cl.ly/items/3q2u35013o0y0G2o3X1v/carshare-32-16-half.gif" width="276"/>
-<img src="http://f.cl.ly/items/3l0F1F3Y0s1M1F3a2r0d/ripple.gif" width="276"/>
-
-Parallax, Sticky Headers, Growing image heading, done right in one
-UICollectionViewLayout.
-
-## Installation
-
-[![Version](http://cocoapod-badges.herokuapp.com/v/CSStickyHeaderFlowLayout/badge.png)](http://cocoadocs.org/docsets/CSStickyHeaderFlowLayout)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/CSStickyHeaderFlowLayout/badge.png)](http://cocoadocs.org/docsets/CSStickyHeaderFlowLayout)
-
-### Cocoapods
-
-CSStickyHeaderFlowLayout is available through [CocoaPods](http://cocoapods.org), to install
-it simply add the following line to your Podfile:
-
-    pod "CSStickyHeaderFlowLayout"
-
-### Carthage
-
-CSStickyHeaderFlowLayout is also available with Carthage.
-Add `github "CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout"` to your Cartfile
-
-Alternatively, you can just drag the files from `CSStickyHeaderFlowLayout / Classes` into your own project.
-
-## Usage (Swift/Code)
-
-Documentation is coming soon. For now please open `CSStickyHeaderFlowLayout.xcworkspace` > `SwiftDemo` target.
-
-## Usage (CocoaPods/Objective-C/Storyboard)
-
-To run the example project; clone the repo, and run `pod install` from the Project directory first.
+## Usage
 
 **1. Setting up the Sticky Section Header**
 
-Configure your collection view to use `CSStickyHeaderFlowLayout`. Here's an example on how you to do it in Storyboard.
-
-![](http://f.cl.ly/items/32183h2q18171k323J07/csstickyheaderflowlayout-class.jpg)
+Configure your collection view to use `CSStickyHeaderFlowLayout`. 
 
 Now all your **section headers** will get the sticky effect like table view. You can disable it with one line of code.
 
@@ -117,11 +77,26 @@ Configuring other effects are really just the way how you setup the header cell,
 @property (nonatomic) BOOL disableStickyHeaders;
 ```
 
-Run the project examples and it'll shows you exactly how you achieve different effects.
 
-![](http://f.cl.ly/items/313D2n3R0H0e0x090B3X/different-header.jpeg)
 
-## Updates
+## Requirements
+
+- Xcode 12
+- iOS 11
+
+## Original Author
+
+James Tang, j@jamztang.com
+
+## License
+
+CSStickyHeaderFlowLayout is available under the MIT license. See the LICENSE file for more info.
+
+
+## Changelog
+
+- 0.3.0: Add Swift Package Manager Support
+
 - 0.2.12: Add Swift 5 Demo
 
 - 0.2.11: Add support for carthage.
@@ -143,7 +118,7 @@ Run the project examples and it'll shows you exactly how you achieve different e
 - 0.2.3: Enabled iPhone 6 screen sizes, reverted a patch and fixed a visual bug and content tapping bug.
 
 - 0.2.2: Fix 1px header and zIndex problem, thanks
-  [@m1entus](https://github.com/m1entus) and [@Xyand](https://github.com/Xyand)
+[@m1entus](https://github.com/m1entus) and [@Xyand](https://github.com/Xyand)
 
 - 0.2.1: Fix crash on reloadData in collection view when header is offscreen, thanks [@jessesquires](https://github.com/jessesquires)
 
@@ -152,26 +127,3 @@ Run the project examples and it'll shows you exactly how you achieve different e
 - 0.1.1: Minor fixes for default number of sections, thanks [@miwillhite](https://github.com/miwillhite)
 
 - 0.1: Initial Release
-
-## Who's using it?
-
-We've a [wiki page][made] for that, feel free to add your projects there!
-
-## Requirements
-
-- Xcode 5
-- iOS 7 (I haven't really test on iOS 6 but it should work if you're using iOS 6 compatible Storyboard)
-
-## Author
-
-James Tang, j@jamztang.com
-
-## License
-
-CSStickyHeaderFlowLayout is available under the MIT license. See the LICENSE file for more info.
-
-[CSStickyHeaderFlowLayout.h]:https://github.com/jamztang/CSStickyHeaderFlowLayout/blob/master/Classes/CSStickyHeaderFlowLayout.h
-
-[Carshare]:http://carshare.hk
-[Ripple]:http://ripplechat.io
-[made]:https://github.com/jamztang/CSStickyHeaderFlowLayout/wiki

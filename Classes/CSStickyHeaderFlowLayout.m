@@ -9,7 +9,6 @@
 #import "CSStickyHeaderFlowLayout.h"
 #import "CSStickyHeaderFlowLayoutAttributes.h"
 
-
 NSString *const CSStickyHeaderParallaxHeader = @"CSStickyHeaderParallexHeader";
 static const NSInteger kHeaderZIndex = 1024;
 
